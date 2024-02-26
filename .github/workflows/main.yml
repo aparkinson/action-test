@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: coauthor-app/capture-action@c7c731989b2bec2153199c41e8f7fd7a555a5f97
+        uses: coauthor-app/capture-action@e0e7635b6f9827a88204795f2357583b2e588b4b
         with:
           evidence: 'system-verification'
           type: 'bdd'
