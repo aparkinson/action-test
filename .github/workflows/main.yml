@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: coauthor-app/capture-action@010c1d1e4fcfc934ef748112b5622bfa87f87496
+        uses: coauthor-app/capture-action@main
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
