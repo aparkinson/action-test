@@ -12,7 +12,7 @@ jobs:
           evidence: 'system-verification'
           type: 'bdd'
           format: 'serenity'
-          server: 'vrhs2uv136.execute-api.eu-west-2.amazonaws.com'
+          hostname: 'vrhs2uv136.execute-api.eu-west-2.amazonaws.com'
           path: /reports/**
 
 
