@@ -16,6 +16,6 @@ jobs:
           type: 'bdd'
           format: 'serenity'
           hostname: 'vrhs2uv136.execute-api.eu-west-2.amazonaws.com'
-          path: /reports/*.txt
+          path: reports/*.txt
 
 
