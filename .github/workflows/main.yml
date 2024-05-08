@@ -3,6 +3,7 @@ on: [push]
 permissions:
   id-token: write
 
+
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
@@ -17,7 +18,7 @@ jobs:
         with:
           evidence: 'system-verification'
           type: 'bdd'
-          format: 'serenity'
+          format: 'cucumber+ndjson'
           hostname: 'vrhs2uv136.execute-api.eu-west-2.amazonaws.com'
           path: 'reports/**'
 
