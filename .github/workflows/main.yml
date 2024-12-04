@@ -14,7 +14,7 @@ jobs:
 
       - name: Hello world action step
         id: hello
-        uses: coauthor-app/capture-action@main
+        uses: coauthor-app/capture-action@1.0.1
         with:
           evidence: 'system-verification'
           type: 'bdd'
