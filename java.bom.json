@@ -1,0 +1,1669 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:50a0bbb8-e14a-40b3-9606-682bb1342a2b",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-07-15T12:49:33Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "10.8.4",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@10.8.4",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@10.8.4",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
+    "authors": [{ "name": "OWASP Foundation" }],
+    "lifecycles": [{ "phase": "build" }],
+    "component": {
+      "name": "java-bank-api",
+      "type": "application",
+      "group": "michaelcychan",
+      "version": "0.0.1-SNAPSHOT",
+      "properties": [
+        {
+          "name": "buildFile",
+          "value": "/Users/michael/Projects/java-bank-api/build.gradle"
+        },
+        {
+          "name": "projectDir",
+          "value": "/Users/michael/Projects/java-bank-api"
+        },
+        { "name": "rootDir", "value": "/Users/michael/Projects/java-bank-api" }
+      ],
+      "purl": "pkg:maven/michaelcychan/java-bank-api@0.0.1-SNAPSHOT?type=jar",
+      "bom-ref": "pkg:maven/michaelcychan/java-bank-api@0.0.1-SNAPSHOT?type=jar"
+    },
+    "properties": [
+      { "name": "cdx:bom:componentTypes", "value": "maven" },
+      {
+        "name": "cdx:bom:componentNamespaces",
+        "value": "ch.qos.logback\\ncom.fasterxml\\ncom.fasterxml.jackson\\ncom.fasterxml.jackson.core\\ncom.fasterxml.jackson.datatype\\ncom.fasterxml.jackson.module\\ncom.google.code.gson\\ncom.h2database\\ncom.jayway.jsonpath\\ncom.sun.istack\\ncom.vaadin.external.google\\ncom.zaxxer\\nio.micrometer\\njakarta.activation\\njakarta.annotation\\njakarta.inject\\njakarta.persistence\\njakarta.transaction\\njakarta.xml.bind\\njunit\\nnet.bytebuddy\\nnet.minidev\\norg.antlr\\norg.apache.logging.log4j\\norg.apache.tomcat.embed\\norg.apiguardian\\norg.aspectj\\norg.assertj\\norg.eclipse.angus\\norg.glassfish.jaxb\\norg.hamcrest\\norg.hibernate.common\\norg.hibernate.orm\\norg.jboss\\norg.jboss.logging\\norg.junit\\norg.junit.jupiter\\norg.junit.platform\\norg.mockito\\norg.objenesis\\norg.opentest4j\\norg.ow2.asm\\norg.skyscreamer\\norg.slf4j\\norg.springframework\\norg.springframework.boot\\norg.springframework.data\\norg.xmlunit\\norg.yaml"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-data-jpa",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-aop",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-aop@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-aop@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-core",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-jcl",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-jcl@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-jcl@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-context",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-context@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-context@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-aop",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-aop@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-aop@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-beans",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-expression",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-expression@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-expression@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-autoconfigure",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-logging",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.4.7",
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.4.7?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/ch.qos.logback/logback-classic@1.4.7?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.4.7",
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.4.7?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/ch.qos.logback/logback-core@1.4.7?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.7",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-to-slf4j",
+      "version": "2.19.0",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.19.0?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.19.0?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-api",
+      "version": "2.19.0",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.slf4j",
+      "name": "jul-to-slf4j",
+      "version": "2.0.7",
+      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.7?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.7?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "jakarta.annotation",
+      "name": "jakarta.annotation-api",
+      "version": "2.1.1",
+      "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.yaml",
+      "name": "snakeyaml",
+      "version": "1.33",
+      "purl": "pkg:maven/org.yaml/snakeyaml@1.33?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.yaml/snakeyaml@1.33?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.aspectj",
+      "name": "aspectjweaver",
+      "version": "1.9.19",
+      "purl": "pkg:maven/org.aspectj/aspectjweaver@1.9.19?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.aspectj/aspectjweaver@1.9.19?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-jdbc",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.zaxxer",
+      "name": "HikariCP",
+      "version": "5.0.1",
+      "purl": "pkg:maven/com.zaxxer/HikariCP@5.0.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.zaxxer/HikariCP@5.0.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-jdbc",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-jdbc@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-jdbc@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-tx",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-tx@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-tx@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.hibernate.orm",
+      "name": "hibernate-core",
+      "version": "6.1.7.Final",
+      "purl": "pkg:maven/org.hibernate.orm/hibernate-core@6.1.7.Final?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.hibernate.orm/hibernate-core@6.1.7.Final?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "jakarta.persistence",
+      "name": "jakarta.persistence-api",
+      "version": "3.1.0",
+      "purl": "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.1.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.1.0?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "jakarta.transaction",
+      "name": "jakarta.transaction-api",
+      "version": "2.0.1",
+      "purl": "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.data",
+      "name": "spring-data-jpa",
+      "version": "3.0.5",
+      "purl": "pkg:maven/org.springframework.data/spring-data-jpa@3.0.5?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.data/spring-data-jpa@3.0.5?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.data",
+      "name": "spring-data-commons",
+      "version": "3.0.5",
+      "purl": "pkg:maven/org.springframework.data/spring-data-commons@3.0.5?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.data/spring-data-commons@3.0.5?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-orm",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-orm@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-orm@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-aspects",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-aspects@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-aspects@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-web",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-json",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-web",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-web@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-web@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-observation",
+      "version": "1.10.6",
+      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.10.6?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-observation@1.10.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-commons",
+      "version": "1.10.6",
+      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.10.6?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-commons@1.10.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.14.2",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.14.2",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.fasterxml.jackson",
+      "name": "jackson-bom",
+      "version": "2.14.2",
+      "purl": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.14.2",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jdk8",
+      "version": "2.14.2",
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.14.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.14.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jsr310",
+      "version": "2.14.2",
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.14.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.14.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.fasterxml.jackson.module",
+      "name": "jackson-module-parameter-names",
+      "version": "2.14.2",
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.14.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.14.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-tomcat",
+      "version": "3.0.6",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-core",
+      "version": "10.1.8",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-el",
+      "version": "10.1.8",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-websocket",
+      "version": "10.1.8",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-webmvc",
+      "version": "6.0.8",
+      "purl": "pkg:maven/org.springframework/spring-webmvc@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-webmvc@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "com.google.code.gson",
+      "name": "gson",
+      "version": "2.10.1",
+      "purl": "pkg:maven/com.google.code.gson/gson@2.10.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.google.code.gson/gson@2.10.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "compileClasspath" }]
+    },
+    {
+      "group": "org.jboss.logging",
+      "name": "jboss-logging",
+      "version": "3.5.0.Final",
+      "purl": "pkg:maven/org.jboss.logging/jboss-logging@3.5.0.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jboss.logging/jboss-logging@3.5.0.Final?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "org.hibernate.common",
+      "name": "hibernate-commons-annotations",
+      "version": "6.0.6.Final",
+      "purl": "pkg:maven/org.hibernate.common/hibernate-commons-annotations@6.0.6.Final?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.hibernate.common/hibernate-commons-annotations@6.0.6.Final?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "org.jboss",
+      "name": "jandex",
+      "version": "2.4.2.Final",
+      "purl": "pkg:maven/org.jboss/jandex@2.4.2.Final?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.jboss/jandex@2.4.2.Final?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "com.fasterxml",
+      "name": "classmate",
+      "version": "1.5.1",
+      "purl": "pkg:maven/com.fasterxml/classmate@1.5.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml/classmate@1.5.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "net.bytebuddy",
+      "name": "byte-buddy",
+      "version": "1.12.23",
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy@1.12.23?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy@1.12.23?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "jakarta.xml.bind",
+      "name": "jakarta.xml.bind-api",
+      "version": "4.0.0",
+      "purl": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.0?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "jakarta.activation",
+      "name": "jakarta.activation-api",
+      "version": "2.1.1",
+      "purl": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "org.glassfish.jaxb",
+      "name": "jaxb-runtime",
+      "version": "4.0.2",
+      "purl": "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "org.glassfish.jaxb",
+      "name": "jaxb-core",
+      "version": "4.0.2",
+      "purl": "pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "org.eclipse.angus",
+      "name": "angus-activation",
+      "version": "2.0.0",
+      "purl": "pkg:maven/org.eclipse.angus/angus-activation@2.0.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.eclipse.angus/angus-activation@2.0.0?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "org.glassfish.jaxb",
+      "name": "txw2",
+      "version": "4.0.2",
+      "purl": "pkg:maven/org.glassfish.jaxb/txw2@4.0.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.glassfish.jaxb/txw2@4.0.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "com.sun.istack",
+      "name": "istack-commons-runtime",
+      "version": "4.1.1",
+      "purl": "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "jakarta.inject",
+      "name": "jakarta.inject-api",
+      "version": "2.0.0",
+      "purl": "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.0?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "org.antlr",
+      "name": "antlr4-runtime",
+      "version": "4.10.1",
+      "purl": "pkg:maven/org.antlr/antlr4-runtime@4.10.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.antlr/antlr4-runtime@4.10.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "com.h2database",
+      "name": "h2",
+      "version": "2.1.214",
+      "purl": "pkg:maven/com.h2database/h2@2.1.214?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.h2database/h2@2.1.214?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "mainSourceElements" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-test",
+      "version": "3.0.6",
+      "scope": "optional",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-test",
+      "version": "3.0.6",
+      "scope": "optional",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-test-autoconfigure",
+      "version": "3.0.6",
+      "scope": "optional",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.0.6?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.0.6?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "com.jayway.jsonpath",
+      "name": "json-path",
+      "version": "2.7.0",
+      "scope": "optional",
+      "purl": "pkg:maven/com.jayway.jsonpath/json-path@2.7.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.jayway.jsonpath/json-path@2.7.0?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "net.minidev",
+      "name": "json-smart",
+      "version": "2.4.10",
+      "scope": "optional",
+      "purl": "pkg:maven/net.minidev/json-smart@2.4.10?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/net.minidev/json-smart@2.4.10?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "net.minidev",
+      "name": "accessors-smart",
+      "version": "2.4.9",
+      "scope": "optional",
+      "purl": "pkg:maven/net.minidev/accessors-smart@2.4.9?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/net.minidev/accessors-smart@2.4.9?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.ow2.asm",
+      "name": "asm",
+      "version": "9.3",
+      "scope": "optional",
+      "purl": "pkg:maven/org.ow2.asm/asm@9.3?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm@9.3?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.assertj",
+      "name": "assertj-core",
+      "version": "3.23.1",
+      "scope": "optional",
+      "purl": "pkg:maven/org.assertj/assertj-core@3.23.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.assertj/assertj-core@3.23.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.hamcrest",
+      "name": "hamcrest",
+      "version": "2.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter",
+      "version": "5.9.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.junit",
+      "name": "junit-bom",
+      "version": "5.9.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.junit/junit-bom@5.9.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit/junit-bom@5.9.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter-api",
+      "version": "5.9.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter-params",
+      "version": "5.9.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-commons",
+      "version": "1.9.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.opentest4j",
+      "name": "opentest4j",
+      "version": "1.2.0",
+      "scope": "optional",
+      "purl": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.apiguardian",
+      "name": "apiguardian-api",
+      "version": "1.1.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.mockito",
+      "name": "mockito-core",
+      "version": "4.8.1",
+      "scope": "optional",
+      "purl": "pkg:maven/org.mockito/mockito-core@4.8.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.mockito/mockito-core@4.8.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "net.bytebuddy",
+      "name": "byte-buddy-agent",
+      "version": "1.12.23",
+      "scope": "optional",
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.23?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.23?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.mockito",
+      "name": "mockito-junit-jupiter",
+      "version": "4.8.1",
+      "scope": "optional",
+      "purl": "pkg:maven/org.mockito/mockito-junit-jupiter@4.8.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.mockito/mockito-junit-jupiter@4.8.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.skyscreamer",
+      "name": "jsonassert",
+      "version": "1.5.1",
+      "scope": "optional",
+      "purl": "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "com.vaadin.external.google",
+      "name": "android-json",
+      "version": "0.0.20131108.vaadin1",
+      "scope": "optional",
+      "purl": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.springframework",
+      "name": "spring-test",
+      "version": "6.0.8",
+      "scope": "optional",
+      "purl": "pkg:maven/org.springframework/spring-test@6.0.8?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-test@6.0.8?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.xmlunit",
+      "name": "xmlunit-core",
+      "version": "2.9.1",
+      "scope": "optional",
+      "purl": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "junit",
+      "name": "junit",
+      "version": "4.13.2",
+      "scope": "optional",
+      "purl": "pkg:maven/junit/junit@4.13.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/junit/junit@4.13.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.hamcrest",
+      "name": "hamcrest-core",
+      "version": "2.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.hamcrest/hamcrest-core@2.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.hamcrest/hamcrest-core@2.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testCompileClasspath" }]
+    },
+    {
+      "group": "org.mockito",
+      "name": "mockito-core",
+      "version": "3.+",
+      "scope": "optional",
+      "purl": "pkg:maven/org.mockito/mockito-core@3.+?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.mockito/mockito-core@3.+?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testImplementation" }]
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter-engine",
+      "version": "5.9.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testRuntimeClasspath" }]
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-engine",
+      "version": "1.9.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testRuntimeClasspath" }]
+    },
+    {
+      "group": "org.objenesis",
+      "name": "objenesis",
+      "version": "3.2",
+      "scope": "optional",
+      "purl": "pkg:maven/org.objenesis/objenesis@3.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.objenesis/objenesis@3.2?type=jar",
+      "properties": [{ "name": "GradleProfileName", "value": "testRuntimeClasspath" }]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:maven/michaelcychan/java-bank-api@0.0.1-SNAPSHOT?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.google.code.gson/gson@2.10.1?type=jar",
+        "pkg:maven/com.h2database/h2@2.1.214?type=jar",
+        "pkg:maven/junit/junit@4.13.2?type=jar",
+        "pkg:maven/org.mockito/mockito-core@3.+?type=jar",
+        "pkg:maven/org.mockito/mockito-core@4.8.1?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.0.6?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.hibernate.orm/hibernate-core@6.1.7.Final?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-aop@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@3.0.6?type=jar",
+        "pkg:maven/org.springframework.data/spring-data-jpa@3.0.5?type=jar",
+        "pkg:maven/org.springframework/spring-aspects@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-aop@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.aspectj/aspectjweaver@1.9.19?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+        "pkg:maven/org.springframework/spring-aop@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.0.6?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+        "pkg:maven/org.yaml/snakeyaml@1.33?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-context@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+      "dependsOn": ["pkg:maven/org.springframework/spring-jcl@6.0.8?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-jcl@6.0.8?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-context@6.0.8?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-aop@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-aop@6.0.8?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+      "dependsOn": ["pkg:maven/org.springframework/spring-core@6.0.8?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-expression@6.0.8?type=jar",
+      "dependsOn": ["pkg:maven/org.springframework/spring-core@6.0.8?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.0.6?type=jar",
+      "dependsOn": ["pkg:maven/org.springframework.boot/spring-boot@3.0.6?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/ch.qos.logback/logback-classic@1.4.7?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.19.0?type=jar",
+        "pkg:maven/org.slf4j/jul-to-slf4j@2.0.7?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/ch.qos.logback/logback-classic@1.4.7?type=jar",
+      "dependsOn": [
+        "pkg:maven/ch.qos.logback/logback-core@1.4.7?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/ch.qos.logback/logback-core@1.4.7?type=jar",
+      "dependsOn": []
+    },
+    { "ref": "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar", "dependsOn": [] },
+    {
+      "ref": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.19.0?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.7?type=jar",
+      "dependsOn": ["pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+      "dependsOn": []
+    },
+    { "ref": "pkg:maven/org.yaml/snakeyaml@1.33?type=jar", "dependsOn": [] },
+    {
+      "ref": "pkg:maven/org.aspectj/aspectjweaver@1.9.19?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.zaxxer/HikariCP@5.0.1?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+        "pkg:maven/org.springframework/spring-jdbc@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.zaxxer/HikariCP@5.0.1?type=jar",
+      "dependsOn": ["pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-jdbc@6.0.8?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-tx@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-tx@6.0.8?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.hibernate.orm/hibernate-core@6.1.7.Final?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml/classmate@1.5.1?type=jar",
+        "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.0?type=jar",
+        "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.1.0?type=jar",
+        "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?type=jar",
+        "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.0?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy@1.12.23?type=jar",
+        "pkg:maven/org.antlr/antlr4-runtime@4.10.1?type=jar",
+        "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.2?type=jar",
+        "pkg:maven/org.hibernate.common/hibernate-commons-annotations@6.0.6.Final?type=jar",
+        "pkg:maven/org.jboss.logging/jboss-logging@3.5.0.Final?type=jar",
+        "pkg:maven/org.jboss/jandex@2.4.2.Final?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.1.0?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.springframework.data/spring-data-jpa@3.0.5?type=jar",
+      "dependsOn": [
+        "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
+        "pkg:maven/org.springframework.data/spring-data-commons@3.0.5?type=jar",
+        "pkg:maven/org.springframework/spring-aop@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-context@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-orm@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-tx@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.data/spring-data-commons@3.0.5?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-orm@6.0.8?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-jdbc@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-tx@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-aspects@6.0.8?type=jar",
+      "dependsOn": ["pkg:maven/org.aspectj/aspectjweaver@1.9.19?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-webmvc@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.14.2?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-web@6.0.8?type=jar",
+      "dependsOn": [
+        "pkg:maven/io.micrometer/micrometer-observation@1.10.6?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/io.micrometer/micrometer-observation@1.10.6?type=jar",
+      "dependsOn": ["pkg:maven/io.micrometer/micrometer-commons@1.10.6?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/io.micrometer/micrometer-commons@1.10.6?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.2?type=jar",
+      "dependsOn": ["pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.14.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+      "dependsOn": ["pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.14.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.14.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.14.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.8?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.8?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.8?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.8?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.8?type=jar",
+      "dependsOn": ["pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.8?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-webmvc@6.0.8?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-aop@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-context@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.google.code.gson/gson@2.10.1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.jboss.logging/jboss-logging@3.5.0.Final?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.hibernate.common/hibernate-commons-annotations@6.0.6.Final?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.jboss/jandex@2.4.2.Final?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml/classmate@1.5.1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/net.bytebuddy/byte-buddy@1.12.23?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.0?type=jar",
+      "dependsOn": ["pkg:maven/jakarta.activation/jakarta.activation-api@2.1.1?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.2?type=jar",
+      "dependsOn": ["pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.2?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.1?type=jar",
+        "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.1?type=jar",
+        "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.0?type=jar",
+        "pkg:maven/org.eclipse.angus/angus-activation@2.0.0?type=jar",
+        "pkg:maven/org.glassfish.jaxb/txw2@4.0.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.eclipse.angus/angus-activation@2.0.0?type=jar",
+      "dependsOn": ["pkg:maven/jakarta.activation/jakarta.activation-api@2.1.1?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.glassfish.jaxb/txw2@4.0.2?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.0?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.antlr/antlr4-runtime@4.10.1?type=jar",
+      "dependsOn": []
+    },
+    { "ref": "pkg:maven/com.h2database/h2@2.1.214?type=jar", "dependsOn": [] },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.jayway.jsonpath/json-path@2.7.0?type=jar",
+        "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.0?type=jar",
+        "pkg:maven/org.assertj/assertj-core@3.23.1?type=jar",
+        "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.2?type=jar",
+        "pkg:maven/org.mockito/mockito-core@4.8.1?type=jar",
+        "pkg:maven/org.mockito/mockito-junit-jupiter@4.8.1?type=jar",
+        "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.0.6?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-test@6.0.8?type=jar",
+        "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.0.6?type=jar",
+      "dependsOn": ["pkg:maven/org.springframework.boot/spring-boot@3.0.6?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.0.6?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.0.6?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.jayway.jsonpath/json-path@2.7.0?type=jar",
+      "dependsOn": ["pkg:maven/net.minidev/json-smart@2.4.10?type=jar", "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/net.minidev/json-smart@2.4.10?type=jar",
+      "dependsOn": ["pkg:maven/net.minidev/accessors-smart@2.4.9?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/net.minidev/accessors-smart@2.4.9?type=jar",
+      "dependsOn": ["pkg:maven/org.ow2.asm/asm@9.3?type=jar"]
+    },
+    { "ref": "pkg:maven/org.ow2.asm/asm@9.3?type=jar", "dependsOn": [] },
+    {
+      "ref": "pkg:maven/org.assertj/assertj-core@3.23.1?type=jar",
+      "dependsOn": ["pkg:maven/net.bytebuddy/byte-buddy@1.12.23?type=jar"]
+    },
+    { "ref": "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar", "dependsOn": [] },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.2?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit/junit-bom@5.9.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.2?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.2?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.9.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.2?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.2?type=jar",
+        "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.2?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.mockito/mockito-core@4.8.1?type=jar",
+      "dependsOn": [
+        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.23?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy@1.12.23?type=jar",
+        "pkg:maven/org.objenesis/objenesis@3.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.23?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.mockito/mockito-junit-jupiter@4.8.1?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.2?type=jar",
+        "pkg:maven/org.mockito/mockito-core@4.8.1?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+      "dependsOn": ["pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-test@6.0.8?type=jar",
+      "dependsOn": ["pkg:maven/org.springframework/spring-core@6.0.8?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/junit/junit@4.13.2?type=jar",
+      "dependsOn": ["pkg:maven/org.hamcrest/hamcrest-core@2.2?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.hamcrest/hamcrest-core@2.2?type=jar",
+      "dependsOn": ["pkg:maven/org.hamcrest/hamcrest@2.2?type=jar"]
+    },
+    {
+      "ref": "pkg:maven/org.mockito/mockito-core@3.+?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.2?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.9.2?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.2?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.2?type=jar",
+        "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
+      ]
+    },
+    { "ref": "pkg:maven/org.objenesis/objenesis@3.2?type=jar", "dependsOn": [] }
+  ],
+  "formulation": [
+    {
+      "bom-ref": "65b2e2ad-68d3-4a2a-b6b8-ed564c26862e",
+      "components": [
+        {
+          "type": "file",
+          "name": ".gitignore",
+          "version": "c2065bc26202b2d072aca3efc3d1c2efad3afcbf"
+        },
+        {
+          "type": "file",
+          "name": "README.md",
+          "version": "8c74fd8a8989323e881f0b20e9cd5a56885345c3"
+        },
+        {
+          "type": "file",
+          "name": "build.gradle",
+          "version": "238c04a2273694f4c14b501b96b40f761213b968"
+        },
+        {
+          "type": "file",
+          "name": "data/bank-data.json",
+          "version": "f680cbb0d02256cb3c606ee64f368fbe22a95a22"
+        },
+        {
+          "type": "file",
+          "name": "gradle/wrapper/gradle-wrapper.jar",
+          "version": "249e5832f090a2944b7473328c07c9755baa3196"
+        },
+        {
+          "type": "file",
+          "name": "gradle/wrapper/gradle-wrapper.properties",
+          "version": "774fae87671b561056f25b9669a14c8beff8db5c"
+        },
+        {
+          "type": "file",
+          "name": "gradlew",
+          "version": "a69d9cb6c20655813e44515156e7253a2a239138"
+        },
+        {
+          "type": "file",
+          "name": "gradlew.bat",
+          "version": "f127cfd49d4024c3e1e0d08ba56399221b4fb25d"
+        },
+        {
+          "type": "file",
+          "name": "settings.gradle",
+          "version": "b9813f071078b2e2de714f61528f8a8f92ebd5fb"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/JavaBankApiApplication.java",
+          "version": "d8b3ab6508476b58eaeb116cd84d9328308093f3"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/ReadJsonData.java",
+          "version": "94a1467bbaf35cbd169fe823aa0a38a949a08bde"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/controller/AccountController.java",
+          "version": "460ff8af97292c9f6fb850ce1809a50bcdaa84d8"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/controller/JavaBankApiController.java",
+          "version": "f7fa34e19b22faaf92ef350db2f6701a29367c5e"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/model/Account.java",
+          "version": "d895604d3d64f071503cd9afa0d57be881dafc99"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/model/Bank.java",
+          "version": "e2bff118f51ce8f3c31f8cc23ae998dbf22a2ab4"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/model/Client.java",
+          "version": "80e09960d2db5c9e17003bb03dfab37467fd7527"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/record/BankDetails.java",
+          "version": "1e8c7b957264cfc4ca0f6a91eb3a3dafe74435be"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/record/GreetingCounter.java",
+          "version": "9b05c715940a0f9970af9a0137b082176e89739d"
+        },
+        {
+          "type": "file",
+          "name": "src/main/java/michaelcychan/javabankapi/record/Message.java",
+          "version": "886c12ab8a1e6db441c090af451b9e01f0dbd390"
+        },
+        {
+          "type": "file",
+          "name": "src/main/resources/application.properties",
+          "version": "8b137891791fe96927ad78e64b0aad7bded08bdc"
+        },
+        {
+          "type": "file",
+          "name": "src/test/java/michaelcychan/javabankapi/JavaBankApiApplicationTests.java",
+          "version": "cf55290f670e0c54b902d9bf1e0a3372d510fc23"
+        },
+        {
+          "type": "file",
+          "name": "src/test/java/michaelcychan/javabankapi/ReadJsonDataTest.java",
+          "version": "96027e1349e992ce5ac24a9ab9890834f575f9e2"
+        },
+        {
+          "type": "file",
+          "name": "src/test/java/michaelcychan/javabankapi/model/AccountTests.java",
+          "version": "57934b436c0c9b24c29a06812ae5a6b984a7d936"
+        },
+        {
+          "type": "file",
+          "name": "src/test/java/michaelcychan/javabankapi/model/BankTests.java",
+          "version": "44197cefec61dd002922fb388ecb415a99a3c751"
+        },
+        {
+          "type": "file",
+          "name": "src/test/java/michaelcychan/javabankapi/model/ClientTest.java",
+          "version": "74bed8dc90e3b7d243cd9ad95f3b70f41ba67ecd"
+        },
+        {
+          "type": "platform",
+          "name": "java",
+          "version": "openjdk 22.0.1 2024-04-16",
+          "description": "openjdk 22.0.1 2024-04-16\nOpenJDK Runtime Environment (build 22.0.1+8-16)\nOpenJDK 64-Bit Server VM (build 22.0.1+8-16, mixed mode, sharing)",
+          "properties": [
+            {
+              "name": "java:modules",
+              "value": "java.base@22.0.1, java.compiler@22.0.1, java.datatransfer@22.0.1, java.desktop@22.0.1, java.instrument@22.0.1, java.logging@22.0.1, java.management@22.0.1, java.management.rmi@22.0.1, java.naming@22.0.1, java.net.http@22.0.1, java.prefs@22.0.1, java.rmi@22.0.1, java.scripting@22.0.1, java.se@22.0.1, java.security.jgss@22.0.1, java.security.sasl@22.0.1, java.smartcardio@22.0.1, java.sql@22.0.1, java.sql.rowset@22.0.1, java.transaction.xa@22.0.1, java.xml@22.0.1, java.xml.crypto@22.0.1, jdk.accessibility@22.0.1, jdk.attach@22.0.1, jdk.charsets@22.0.1, jdk.compiler@22.0.1, jdk.crypto.cryptoki@22.0.1, jdk.crypto.ec@22.0.1, jdk.dynalink@22.0.1, jdk.editpad@22.0.1, jdk.graal.compiler@22.0.1, jdk.graal.compiler.management@22.0.1, jdk.hotspot.agent@22.0.1, jdk.httpserver@22.0.1, jdk.incubator.vector@22.0.1, jdk.internal.ed@22.0.1, jdk.internal.jvmstat@22.0.1, jdk.internal.le@22.0.1, jdk.internal.opt@22.0.1, jdk.internal.vm.ci@22.0.1, jdk.jartool@22.0.1, jdk.javadoc@22.0.1, jdk.jcmd@22.0.1, jdk.jconsole@22.0.1, jdk.jdeps@22.0.1, jdk.jdi@22.0.1, jdk.jdwp.agent@22.0.1, jdk.jfr@22.0.1, jdk.jlink@22.0.1, jdk.jpackage@22.0.1, jdk.jshell@22.0.1, jdk.jsobject@22.0.1, jdk.jstatd@22.0.1, jdk.localedata@22.0.1, jdk.management@22.0.1, jdk.management.agent@22.0.1, jdk.management.jfr@22.0.1, jdk.naming.dns@22.0.1, jdk.naming.rmi@22.0.1, jdk.net@22.0.1, jdk.nio.mapmode@22.0.1, jdk.random@22.0.1, jdk.sctp@22.0.1, jdk.security.auth@22.0.1, jdk.security.jgss@22.0.1, jdk.unsupported@22.0.1, jdk.unsupported.desktop@22.0.1, jdk.xml.dom@22.0.1, jdk.zipfs@22.0.1"
+            }
+          ]
+        },
+        {
+          "type": "platform",
+          "name": "node",
+          "version": "v20.15.1",
+          "description": "npm: 10.8.2"
+        },
+        {
+          "type": "platform",
+          "name": "gcc",
+          "version": "Apple clang version 15.0.0 (clang-1500.3.9.4)",
+          "description": "programs: =/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\\nlibraries: =/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0"
+        }
+      ],
+      "workflows": [
+        {
+          "bom-ref": "ff40c674-614a-4075-bf92-1915063e789c",
+          "uid": "d726296b-fbf8-4c65-b5a5-c1a8a25f1889",
+          "taskTypes": ["build", "clone"],
+          "inputs": [
+            {
+              "environmentVars": [{ "name": "GIT_BRANCH", "value": "main" }],
+              "source": {
+                "ref": "git@github.com:michaelcychan/java-bank-api.git"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
