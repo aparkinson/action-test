@@ -22,5 +22,22 @@ jobs:
           hostname: 'vrhs2uv136.execute-api.eu-west-2.amazonaws.com'
           path: 'reports/**'
 
+  sbom_job:
+    runs-on: ubuntu-latest
+    name: Upload test SBOM
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: SBOM upload step
+        id: hello
+        uses: coauthor-app/capture-action@v1
+        with:
+          evidence: 'cybersecurity'
+          type: 'sbom'
+          format: 'cyclonedx'
+          hostname: 'vrhs2uv136.execute-api.eu-west-2.amazonaws.com'
+          path: 'java.bom.json'
+
 
 
